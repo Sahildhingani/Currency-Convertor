@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body >
+    <div id=" cointainer" class="bg-orange-300 h-screen w-screen flex justify-center items-center">
+        <div id="box1" class="bg-white h-72 w-96 border-2 rounded border-black flex flex-col">
+            <div class="flex flex-col">
+                <h2 id="head1" class="font-bold font-serif ml-24">Currency Convertor</h2>
+                <h3 id="head2" class="font-bold mb-2">Enter Amount:</h3>
+                <div class="flex mb-2">
+                    <input type="number" min="0" placeholder="Amount" id="amount">
+            <input type="text" readonly placeholder="Exchange-Amount">
+                </div>
+            </div>
+            <div class="flex gap-5 ml-5">
+                <div class="flex gap-3 mr-2">
+                    <img id="from" src="https://flagsapi.com/US/flat/64.png" alt="country-flag">
+                    <select name="country-list" id="select1" class="">
+                    </select>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left mt-5 ml-2 mr-2"></i>
+                <div class="flex  ml-2">
+                    <img id="to" src="https://flagsapi.com/IN/flat/64.png" alt="country-flag">
+                    <select name="country-list2" id="select2" class="">
+                       
+                    </select>
+                </div>
+            </div>
+            <button id="summit" class="font-bold border-2 border-black rounded-lg w-56">Exchange</button>
+        </div>
+    </div>
+    <script src="option.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
